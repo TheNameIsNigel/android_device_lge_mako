@@ -13,7 +13,7 @@
 # limitations under the License.
 
 on init
-    write /sys/class/android_usb/android0/f_rndis/manufacturer LGE
+    write /sys/class/android_usb/android0/f_rndis/manufacturer GoLabs
     write /sys/class/android_usb/android0/f_rndis/vendorID 18D1
     write /sys/class/android_usb/android0/f_rndis/wceis 1
 
@@ -26,7 +26,7 @@ on boot
 on property:sys.usb.config=mtp
     stop adbd
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE1
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
@@ -37,7 +37,7 @@ on property:sys.usb.config=mtp
 
 on property:sys.usb.config=mtp,adb
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE2
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
@@ -51,7 +51,7 @@ on property:sys.usb.config=mtp,adb
 on property:sys.usb.config=rndis
     stop adbd
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE3
     write /sys/class/android_usb/android0/bDeviceClass 239
     write /sys/class/android_usb/android0/bDeviceSubClass 2
@@ -62,7 +62,7 @@ on property:sys.usb.config=rndis
 
 on property:sys.usb.config=rndis,adb
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE4
     write /sys/class/android_usb/android0/bDeviceClass 239
     write /sys/class/android_usb/android0/bDeviceSubClass 2
@@ -76,7 +76,7 @@ on property:sys.usb.config=rndis,adb
 on property:sys.usb.config=ptp
     stop adbd
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE5
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
@@ -87,7 +87,7 @@ on property:sys.usb.config=ptp
 
 on property:sys.usb.config=ptp,adb
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 4EE6
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
@@ -101,7 +101,7 @@ on property:sys.usb.config=ptp,adb
 on property:sys.usb.config=diag
     stop adbd
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 1004
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 631B
     write /sys/class/android_usb/android0/bDeviceClass 239
     write /sys/class/android_usb/android0/bDeviceSubClass 2
@@ -116,7 +116,7 @@ on property:sys.usb.config=diag
 on property:sys.usb.config=diag,adb
     stop adbd
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 1004
+    write /sys/class/android_usb/android0/idVendor 6154
     write /sys/class/android_usb/android0/idProduct 631B
     write /sys/class/android_usb/android0/bDeviceClass 239
     write /sys/class/android_usb/android0/bDeviceSubClass 2
